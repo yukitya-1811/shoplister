@@ -1,11 +1,20 @@
 #1 /bin/bash
 
-count=10
+count=15
 
-if [ $count -eq 10 ]
+if [ $count -gt 10 ]
 then
-	echo 'The condition is true'
+	echo 'The 1st condition is true'
 
 else
-	echo 'The condition is false'
+	echo 'The 1st condition is false'
+fi
+
+if [ $count -gt 20 ]
+then
+	echo 'The 2nd condition is true'
+
+else
+	echo 'The 2nd condition is false'
+
 fi

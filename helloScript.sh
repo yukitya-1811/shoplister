@@ -1,11 +1,19 @@
 #1 /bin/bash
 
-count=10
+count=100
 
-if [ $count -eq 10 ]
+if [ $count > 9 ]
 then
-	echo 'The condition is true'
+	echo 'The first condition is true'
 
 else
-	echo 'The condition is false'
+	echo 'The first condition is false'
+fi
+
+
+if [ $count < 20 ]
+then
+	echo 'The second condition is true'
+else
+	echo 'The second condition is false'
 fi

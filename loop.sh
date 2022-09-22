@@ -11,3 +11,10 @@ do
 done
 
 
+
+nom=3
+until [ $nom -eq 30 ]
+do
+	echo "$nom"
+	nom=$(( nom+3 ))
+done

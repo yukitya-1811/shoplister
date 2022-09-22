@@ -18,3 +18,9 @@ do
 	echo "$nom"
 	nom=$(( nom+3 ))
 done
+
+
+for i in 1 2 3 4 5
+do
+	echo $i
+done

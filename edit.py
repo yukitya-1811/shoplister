@@ -7,23 +7,21 @@ item = input(' > ')
 
 s = []
 f = open(os.environ['pylist'],'r')
-print(os.environ['pylist'])
+print(f)
 for i in f:
-	s.append(i.strip())
-print('The old list was ', s)
+	s.append(i)
 
+print('The old list was ', s)
 f.close()
 
 
 for i in s:
-	if i == item:
+	if i.strip() == item:
 		s.remove(i)
 	else:
 		pass
 
-print('The new list is : ')
-for i in s:
-	print(i)
+print('The new list is  ', s)
 
 f = open(os.environ['pylist'], 'w')
 f.writelines(s)
